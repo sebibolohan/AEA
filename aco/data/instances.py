@@ -1,0 +1,80 @@
+INSTANCES = {
+    "myciel3": {
+        "path": "data/raw/myciel3.col",
+        "k": 4,
+        "best_known": 4,
+        "difficulty": "easy",
+    },
+    "myciel4": {
+        "path": "data/raw/myciel4.col",
+        "k": 5,
+        "best_known": 5,
+        "difficulty": "easy",
+    },
+    "queen5_5": {
+        "path": "data/raw/queen5_5.col",
+        "k": 5,
+        "best_known": 5,
+        "difficulty": "medium",
+    },
+    "queen7_7": {
+        "path": "data/raw/queen7_7.col",
+        "k": 7,
+        "best_known": 7,
+        "difficulty": "medium",
+    },
+    "miles1500": {
+        "path": "data/raw/miles1500.col",
+        "k": 59,
+        "best_known": 59,
+        "difficulty": "medium-hard",
+    },
+    "fpsol2_i_1": {
+        "path": "data/raw/fpsol2.i.1.col",
+        "k": 30,
+        "best_known": 30,
+        "difficulty": "medium",
+    },
+    "inithx_i_1": {
+        "path": "data/raw/inithx.i.1.col",
+        "k": 31,
+        "best_known": 31,
+        "difficulty": "medium",
+    },
+    "flat300_20": {
+        "path": "data/raw/flat300_20_0.col",
+        "k": 20,
+        "best_known": 20,
+        "difficulty": "medium-hard",
+    },
+    "le450_5a": {
+        "path": "data/raw/le450_5a.col",
+        "k": 5,
+        "best_known": 5,
+        "difficulty": "hard",
+    },
+    "DSJC500_1": {
+        "path": "data/raw/DSJC500.1.col",
+        "k": 13,
+        "best_known": 12,
+        "difficulty": "very-hard",
+    },
+    "DSJC500_5": {
+        "path": "data/raw/DSJC500.5.col",
+        "k": 48,
+        "best_known": 48,
+        "difficulty": "very-hard",
+    },
+    "DSJC500_9": {
+        "path": "data/raw/DSJC500.9.col",
+        "k": 48,
+        "best_known": 48,
+        "difficulty": "very-hard",
+    },
+    "DSJC1000_9": {
+        "path": "data/raw/DSJC1000.9.col",
+        "k": 100,
+        "best_known": 223,
+        "difficulty": "extreme",
+    },
+}
