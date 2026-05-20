@@ -1,0 +1,89 @@
+CSP: <X, D, C>
+
+(a).1 Map coloring (instanta de baza, 6 tari)
+
+X (variabile):
+X = { Belgium, Denmark, France, Germany, Luxembourg, Netherlands }
+
+D (domenii):
+Fiecare variabila are acelasi domeniu de 4 culori:
+D(x) = {0, 1, 2, 3} pentru orice x in X
+(Interpretare: 0=blue, 1=white, 2=yellow, 3=green)
+
+C (constrangeri):
+Pentru orice doua tari vecine (u, v), impunem u != v.
+
+Relatiile de vecinatate folosite (muchii):
+(Belgium, France)
+(Belgium, Germany)
+(Belgium, Luxembourg)
+(Belgium, Netherlands)
+(Denmark, Germany)
+(France, Germany)
+(France, Luxembourg)
+(Germany, Luxembourg)
+(Germany, Netherlands)
+
+Constrangeri explicite:
+Belgium != France
+Belgium != Germany
+Belgium != Luxembourg
+Belgium != Netherlands
+Denmark != Germany
+France != Germany
+France != Luxembourg
+Germany != Luxembourg
+Germany != Netherlands
+
+(a).2 Modificare: Germany si Denmark au mereu aceeasi culoare
+
+X:
+La fel ca mai sus.
+
+D:
+La fel ca mai sus.
+
+C:
+Se adauga:
+Germany == Denmark
+
+Si se pastreaza toate constrangerile de vecinatate, EXCEPTAND perechea (Germany, Denmark),
+adica NU mai impunem Denmark != Germany (pentru ca ar contrazice egalitatea).
+
+Constrangeri explicite:
+Germany == Denmark
+Belgium != France
+Belgium != Germany
+Belgium != Luxembourg
+Belgium != Netherlands
+France != Germany
+France != Luxembourg
+Germany != Luxembourg
+Germany != Netherlands
+
+(a).3 Modificare: se include Switzerland (vecina cu France si Germany) + pastram Germany==Denmark
+
+X:
+X = { Belgium, Denmark, France, Germany, Luxembourg, Netherlands, Switzerland }
+
+D:
+D(x) = {0, 1, 2, 3} pentru orice x in X
+
+C:
+Se pastreaza constrangerile de la (a).2 si se adauga vecinatatile pentru Switzerland:
+
+Switzerland != France
+Switzerland != Germany
+
+Deci, constrangeri explicite:
+Germany == Denmark
+Belgium != France
+Belgium != Germany
+Belgium != Luxembourg
+Belgium != Netherlands
+France != Germany
+France != Luxembourg
+Germany != Luxembourg
+Germany != Netherlands
+Switzerland != France
+Switzerland != Germany

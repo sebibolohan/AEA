@@ -1,0 +1,46 @@
+CSP: <X, D, C>
+
+(b).1 n-queens pentru tabla 4x4 (n = 4)
+
+Modelare (reprezentare pe coloane):
+Avem cate o variabila pentru fiecare coloana; valoarea variabilei este randul unde punem regina.
+
+X (variabile):
+X = { q0, q1, q2, q3 }
+unde qi = randul reginei din coloana i
+
+D (domenii):
+D(qi) = {0, 1, 2, 3} pentru i in {0,1,2,3}
+
+C (constrangeri):
+
+Randuri diferite (nici doua regine pe acelasi rand):
+AllDifferent(q0, q1, q2, q3)
+Echivalent: qi != qj pentru orice i != j
+
+Diagonale principale diferite:
+Pentru orice i != j:
+(qi + i) != (qj + j)
+
+Diagonale secundare diferite:
+Pentru orice i != j:
+(qi - i) != (qj - j)
+
+(b).2 Varianta cu pozitii blocate
+
+Input suplimentar:
+B = lista de pozitii blocate, fiecare pozitie este un cuplu (row, col).
+
+X:
+La fel ca mai sus (q0..q3), sau generalizat q0..q(n-1).
+
+D:
+La fel ca mai sus.
+
+C:
+Se pastreaza toate constrangerile din (b).1 si se adauga:
+Pentru fiecare (r, c) in B:
+qc != r
+
+Interpretare:
+Regina din coloana c nu are voie sa fie plasata pe randul r, deci celula (r,c) este interzisa.
