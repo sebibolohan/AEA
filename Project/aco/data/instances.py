@@ -25,20 +25,20 @@ INSTANCES = {
     },
     "miles1500": {
         "path": "data/raw/miles1500.col",
-        "k": 59,
-        "best_known": 59,
+        "k": 73,
+        "best_known": 73,
         "difficulty": "medium-hard",
     },
     "fpsol2_i_1": {
         "path": "data/raw/fpsol2.i.1.col",
-        "k": 30,
-        "best_known": 30,
+        "k": 65,
+        "best_known": 65,
         "difficulty": "medium",
     },
     "inithx_i_1": {
         "path": "data/raw/inithx.i.1.col",
-        "k": 31,
-        "best_known": 31,
+        "k": 54,
+        "best_known": 54,
         "difficulty": "medium",
     },
     "flat300_20": {
@@ -67,13 +67,13 @@ INSTANCES = {
     },
     "DSJC500_9": {
         "path": "data/raw/DSJC500.9.col",
-        "k": 48,
-        "best_known": 48,
+        "k": 126,
+        "best_known": 126,
         "difficulty": "very-hard",
     },
     "DSJC1000_9": {
         "path": "data/raw/DSJC1000.9.col",
-        "k": 100,
+        "k": 223,
         "best_known": 223,
         "difficulty": "extreme",
     },
